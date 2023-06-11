@@ -9,6 +9,7 @@
     max-width: 1024px;
     display: flex;
     gap: 20px;
+    border: 1px solid red;
 }
 .list_search{
     flex: 1;
@@ -47,4 +48,5 @@
 }
 .list_result{
     flex: 3;
+    border: 1px solid green;
 }
