@@ -1,0 +1,112 @@
+.header{
+    background-color: #003580;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.header_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+
+}
+.header_container.list_mode{
+    margin: 20px 0px 50px 0px;
+}
+.header_list{
+    display: flex;
+    gap: 40px;
+}
+.header_list_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.header_list_item.active{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.header_desc{
+    margin: 20px 0px;
+}
+.header_btn{
+    background-color: #0b5dd0;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}  
+.header_search{
+    height: 30px;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius:5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+.header_icon{
+    color: #999;
+}
+.header_search_item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header_search_input{
+    border: none;
+    outline: none;
+}
+.header_search_text{
+    cursor: pointer;
+    color: #999;
+}
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    color: #777;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    z-index: 2;
+}
+.option_item{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: 10px;
+}
+.option_counter{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    color: #000;
+}
+.option_counter_btn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: #fff;
+}
+.option_counter_btn:disabled{
+    cursor: not-allowed;
+}
