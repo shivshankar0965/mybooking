@@ -5,6 +5,7 @@ import "./list.css";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
+import SerachItem from "../../Components/searchItem/SerachItem";
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
@@ -41,45 +42,56 @@ const List = () => {
             </div>
             <div className="ls_item">
               <label>Options</label>
-              <div className="ls_option_item">
-                <span className="ls_option_text">
-                  Min Price <small>per night</small>
-                </span>
-                <input type="number" className="ls_option_input" />
-              </div>
-              <div className="ls_option_item">
-                <span className="ls_option_text">
-                  Max Price <small>per night</small>
-                </span>
-                <input type="number" className="ls_option_input" />
-              </div>
-              <div className="ls_option_item">
-                <span className="ls_option_text">Adult</span>
-                <input
-                  type="number"
-                  className="ls_option_input"
-                  placeholder={options.adult}
-                />
-              </div>
-              <div className="ls_option_item">
-                <span className="ls_option_text">Children</span>
-                <input
-                  type="number"
-                  className="ls_option_input"
-                  placeholder={options.child}
-                />
-              </div>
-              <div className="ls_option_item">
-                <span className="ls_option_text">Room</span>
-                <input
-                  type="number"
-                  className="ls_option_input"
-                  placeholder={options.room}
-                />
+              <div className="ls_options">
+                <div className="ls_option_item">
+                  <span className="ls_option_text">
+                    Min Price <small>per night</small>
+                  </span>
+                  <input type="number" className="ls_option_input" />
+                </div>
+                <div className="ls_option_item">
+                  <span className="ls_option_text">
+                    Max Price <small>per night</small>
+                  </span>
+                  <input type="number" className="ls_option_input" />
+                </div>
+                <div className="ls_option_item">
+                  <span className="ls_option_text">Adult</span>
+                  <input
+                    type="number"
+                    className="ls_option_input"
+                    placeholder={options.adult}
+                  />
+                </div>
+                <div className="ls_option_item">
+                  <span className="ls_option_text">Children</span>
+                  <input
+                    type="number"
+                    className="ls_option_input"
+                    placeholder={options.child}
+                  />
+                </div>
+                <div className="ls_option_item">
+                  <span className="ls_option_text">Room</span>
+                  <input
+                    type="number"
+                    className="ls_option_input"
+                    placeholder={options.room}
+                  />
+                </div>
               </div>
             </div>
+            <button>Search</button>
           </div>
-          <div className="list_result"></div>
+          <div className="list_result">
+            <SerachItem />
+            <SerachItem />
+            <SerachItem />
+            <SerachItem />
+            <SerachItem />
+            <SerachItem />
+            <SerachItem />
+          </div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
     max-width: 1024px;
     display: flex;
     gap: 20px;
-    border: 1px solid red;
+
 }
 .list_search{
     flex: 1;
@@ -17,6 +17,17 @@
     padding: 10px;
     border-radius: 10px;
     position: sticky;
+    top: 20px;
+    height: max-content;
+}
+.list_search > button{
+    padding: 10px;
+    background-color: #0071c2;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
 }
 .list_search_title{
     font-size: 20px;
@@ -38,6 +49,9 @@
     border: none;
     padding: 5px;
 }
+.ls_options{
+    padding: 10px;
+}
 .ls_item > span{
     height: 30px;
     background-color: #fff;
@@ -46,7 +60,17 @@
     align-items: center;
     cursor: pointer;
 }
+.ls_option_item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+}
+.ls_option_input{
+    width: 45px;
+}
 .list_result{
     flex: 3;
-    border: 1px solid green;
+
 }
